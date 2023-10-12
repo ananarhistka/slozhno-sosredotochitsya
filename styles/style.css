@@ -2,4 +2,24 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  color: var(--text-color, #353430);
+  font-family: var(--main-font);
+  background-color: var(--bg-color, #FFF1F7);
+}
+
+h1 {
+  font-family: var(--accent-font);
+  font-weight: 700;
+  line-height: 82.5%;
+  text-align: left;
+  color: var( --main-color, #FFC2E6);
+  text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB); 
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+.heading {
+  font-family: var(--accent-font);
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
 }
