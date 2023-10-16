@@ -4,17 +4,20 @@
   переключая тему
 */
 :root {
-  --accent-color: #FF8DCB;
-  --main-color: #FFC2E6;
-  --bg-color: #FFF1F7;
-  --text-color: #353430;
-  --accent-font: 'IBM Plex Mono';
+
 } 
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
-  */
-  background-image: url(/images/cover-image-light.png);
+  */ 
+  --ferst-title: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --main-color: #FFC2E6;
+  --bg-color: #FFF1F7;
+  --main-text-color: #353430;
+  --title-color:#353430;
+  --accent-font: 'IBM Plex Mono';
+  background-image: url(../images/cover-image-light.png);
 }

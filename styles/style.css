@@ -2,21 +2,12 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  color: var(--text-color, #353430);
+  color: var(--main-text-color, #353430);
   font-family: var(--main-font);
   background-color: var(--bg-color, #FFF1F7);
+  background-position: center;
+  background-size: 100%;
   background-attachment: fixed;
-  background-image: url(/images/cover-image.png);
-  background-size:100% 100%;
-}
-
-h1 {
-  font-family: var(--accent-font);
-  font-weight: 700;
-  line-height: 82.5%;
-  text-align: left;
-  color: var( --main-color, #FFC2E6);
-  text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB); 
 }
 
 .heading {
@@ -26,11 +17,24 @@ h1 {
   text-align: left;
 }
 
+.content-section .non-bold {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
 .content-section {
 
 }
 
 .header-titel {
+  font-family: var(--accent-font);
+  font-weight: 700;
+  line-height: 82.5%;
+  text-align: left;
+  color: var(--ferst-title, #FFC2E6);
+  text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB); 
   margin-block-start: 232px;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
@@ -38,16 +42,28 @@ h1 {
 .title-decor {
   background-color: var(--accent-color, #FF8DCB);
   display: inline-block;
+  color: var(--title-color);
+  
+}
+
+.content-section .title-decor:not(:last-of-type) {
+  margin-block-end: 10px;
 }
 
 .content-text-block {
   font-size: 18px;
 }
 
-.content-paragraph {
-
+.content-section .content-text-block:not(:last-of-type) {
+  margin-block-end: 20px;
 }
 
-.content-text-block.content-paragraph:not(:last-of-type) {
-  margin-block-end: 53px;
+.content-text-block {
+  font-family: var(--accent-font);
 }
+
+.content-section .heading:last-child {
+  margin-bottom: 106px;
+}
+
+
