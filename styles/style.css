@@ -4,11 +4,30 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   color: var(--main-text-color, #353430);
   font-family: var(--main-font);
-  background-color: var(--bg-color, #FFF1F7);
+  /*background-color: var(--bg-color, #FFF1F7);*/
   background-attachment: fixed;
   background-position: center;
   background-size: 100%;
 }
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  max-width: 1024px;
+}
+
+button {
+  background-color: transparent;
+  font-family: var( --accent-font);
+  border: none;
+  color: var(--main-text-color, #353430);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: lowercase;
+  padding: 0 13px;
+  gap: 10px;
+} 
 
 .heading {
   font-family: var(--accent-font);
@@ -25,7 +44,10 @@
 }
 
 .content-section {
-  margin: 20px;
+  margin: 0 20px;
+  max-width: 984px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .header-titel {
@@ -37,6 +59,7 @@
   text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB); 
   margin-block-start: 232px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 .title-decor {
@@ -60,8 +83,46 @@
   font-family: var(--accent-font);
 }
 
-.content-section .heading:last-child {
-  margin-bottom: 106px;
+.grid-bloc {
+  display: grid;
+
 }
 
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-grid {
+  object-fit: cover;
+  height: 1091px;
+  gap: 25px;
+  display: grid;
+  grid-template-areas:
+    "sunset sunset ice_cream"
+    "tape books ice_cream"
+    "tape street street";
+}
+
+.sunset {
+  grid-area: sunset;
+}
+
+.ice_cream {
+  grid-area: ice_cream;
+}
+
+.tape {
+  grid-area: tape;
+}
+
+.street {
+  grid-area: street;
+}
+
+.books {
+  grid-area: books;
+}
+ 
