@@ -4,7 +4,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   color: var(--main-text-color, #353430);
   font-family: var(--main-font);
-  /*background-color: var(--bg-color, #FFF1F7);*/
+  background-color: var(--bg-color, #FFF1F7);
   background-attachment: fixed;
   background-position: center;
   background-size: 100%;
@@ -26,7 +26,7 @@ button {
   font-weight: 400;
   text-transform: lowercase;
   padding: 0 13px;
-  gap: 10px;
+  margin-right: 10px;
 } 
 
 .heading {
@@ -46,12 +46,12 @@ button {
 .content-section {
   margin: 0 20px;
   max-width: 984px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  
 }
 
 .header-titel {
   font-family: var(--accent-font);
+  height: 130px;
   font-weight: 700;
   line-height: 82.5%;
   text-align: left;
@@ -59,7 +59,6 @@ button {
   text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB); 
   margin-block-start: 232px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 .title-decor {
