@@ -9,16 +9,7 @@
   --ferst-title: #DB00FF;
   --bg-color: #000028;
   --main-text-color: #F1B2CE;
-  --title-color:#000028;
+  --title-color-dark:#000028;
   --accent-color: #FF0070;
   --accent-font: 'IBM Plex Mono';
 }
- .rec {
-  position: absolute;
-  color: var(--accent-color);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
-  margin: 20px 48px 722px 934px;
- }

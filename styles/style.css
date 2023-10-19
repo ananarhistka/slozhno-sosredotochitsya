@@ -4,11 +4,12 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   color: var(--main-text-color, #353430);
   font-family: var(--main-font);
-  background-color: var(--bg-color, #FFF1F7);
+  background-color: var(--bg-color, #fff1f7);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-size: cover;
 }
 
 .header__theme-menu-list {
@@ -17,20 +18,19 @@
   align-items: center;
   max-width: 1024px;
   gap: 10px;
-  margin: 20px;
 }
 
 button {
   background-color: transparent;
-  font-family: var( --accent-font);
+  font-family: var(--accent-font);
   color: var(--main-text-color, #353430);
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
   text-transform: lowercase;
   padding: 0 13px;
-  border:  none;
-} 
+  border: none;
+}
 
 button:focus {
   outline: none;
@@ -58,6 +58,16 @@ button:hover {
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
+  font-size: 18px;
+  color: var(--title-color-dark);
+}
+
+.dark-tl {
+  
+}
+
+.col {
+  word-wrap: break-word;
 }
 
 .content-section .non-bold {
@@ -70,7 +80,6 @@ button:hover {
 .content-section {
   max-width: 984px;
   margin: 0 20px;
-  
 }
 
 .header-titel {
@@ -79,14 +88,19 @@ button:hover {
   font-weight: 700;
   line-height: 82.5%;
   text-align: left;
-  color: var(--ferst-title, #FFC2E6);
-  text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB); 
+  color: var(--ferst-title, #ffc2e6);
+  text-shadow: 4px 4px 0 var(--accent-color, #ff8dcb);
   margin-block-start: 232px;
 }
 
 .title-decor {
-  background-color: var(--accent-color, #FF8DCB);
+  background-color: var(--accent-color, #ff8dcb);
+}
 
+.bloc-why {
+  display: grid;
+  grid-template-columns: 33% 66%;
+  
 }
 
 .content-section .title-decor:not(:last-of-type) {
@@ -107,7 +121,6 @@ button:hover {
 
 .grid-bloc {
   display: grid;
-
 }
 
 img {
@@ -146,4 +159,3 @@ img {
 .books {
   grid-area: books;
 }
- 

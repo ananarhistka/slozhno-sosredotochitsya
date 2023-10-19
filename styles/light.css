@@ -4,21 +4,21 @@
   переключая тему
 */
 :root {
-
-} 
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
-  */ 
-  --ferst-title: #FFC2E6;
-  --accent-color: #FF8DCB;
-  --main-color: #FFC2E6;
-  --bg-color: #FFF1F7;
+  */
+  --ferst-title: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --main-color: #ffc2e6;
+  --bg-color: #fff1f7;
   --main-text-color: #353430;
-  --title-color:#353430;
-  --accent-font: 'IBM Plex Mono';
-  --shadow-color-title: #FF0070;
+  --title-color: #353430;
+  --title-color-dark: #353430;
+  --accent-font: "IBM Plex Mono";
+  --shadow-color-title: #ff0070;
   background-image: url(../images/cover-image-light.png);
 }
