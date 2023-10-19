@@ -7,6 +7,7 @@
   background-color: var(--bg-color, #FFF1F7);
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 
@@ -16,7 +17,7 @@
   align-items: center;
   max-width: 1024px;
   gap: 10px;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 button {
@@ -29,9 +30,6 @@ button {
   text-transform: lowercase;
   padding: 0 13px;
   border:  none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 } 
 
 button:focus {
@@ -84,7 +82,6 @@ button:hover {
   color: var(--ferst-title, #FFC2E6);
   text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB); 
   margin-block-start: 232px;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
 .title-decor {
