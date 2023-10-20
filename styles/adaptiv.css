@@ -11,13 +11,43 @@
   }
 
   .subtitle {
-    display: flex;
+    display: grid;
     margin-block-start: 114px;
     margin-block-end: 194px;
-    margin-inline-start: 513px;
+    justify-content: end;
+    grid-template-columns: 50%;
   }
 
+  .bloc-why {
+    display: grid;
+    grid-template-columns: 29% 66%;
+    justify-content: space-between;
+  }
+  
+  .bloc-what {
+
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .heading-what {
+    display: grid;
+    grid-template-columns: 32%;
+    margin-block-start: 147px;
+    margin-block-end: 20px;
+  }
+
+  .bloc-how {
+    margin-block-start: 80px;
+    margin-block-end: 80px;
+    display: grid;
+    grid-template-columns: 31% 66%;
+    justify-content: space-between;
+  }
 }
+
 @media only screen and (max-width: 768px) {
   .header-titel {
     text-shadow: 4px 4px 0 var(--accent-color, #ff8dcb);

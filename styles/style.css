@@ -23,7 +23,7 @@
 button {
   background-color: transparent;
   font-family: var(--accent-font);
-  color: var(--main-text-color, #353430);
+  color: var(--dark-tl);
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
@@ -45,12 +45,12 @@ button:disabled {
 }
 
 button:hover {
-  outline: 1px solid var(--main-text-color);
+  outline: 1px solid var(--dark-tl);
   padding: 0 13px;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--main-text-color);
+  outline: 1px solid var(--border-bt);
 }
 
 .heading {
@@ -63,7 +63,7 @@ button:hover {
 }
 
 .dark-tl {
-  
+  color: var(--dark-tl);
 }
 
 .col {
@@ -90,21 +90,14 @@ button:hover {
   text-align: left;
   color: var(--ferst-title, #ffc2e6);
   text-shadow: 4px 4px 0 var(--accent-color, #ff8dcb);
-  margin-block-start: 232px;
 }
 
 .title-decor {
   background-color: var(--accent-color, #ff8dcb);
 }
 
-.bloc-why {
-  display: grid;
-  grid-template-columns: 33% 66%;
-  
-}
-
-.content-section .title-decor:not(:last-of-type) {
-  margin-block-end: 10px;
+.content-section .title-decor {
+  margin-block-end: 20px;
 }
 
 .content-text-block {
@@ -131,7 +124,7 @@ img {
 
 .img-grid {
   object-fit: cover;
-  height: 1091px;
+  margin-block-end: 60px;
   gap: 25px;
   display: grid;
   grid-template-areas:
@@ -159,3 +152,18 @@ img {
 .books {
   grid-area: books;
 }
+
+footer {
+  padding: 384px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--accent-font);
+  height: 130px;
+  font-weight: 700;
+  line-height: 82.5%;
+  color: var(--ferst-title, #ffc2e6);
+  text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
