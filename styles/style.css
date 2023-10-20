@@ -12,6 +12,30 @@
   background-size: cover;
 }
 
+.rec {
+  position: absolute;
+  color: var( --rec);
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-inline-start: 943px;
+  margin-inline-end: 48px;
+}
+
+span::after {
+  content: '';
+  display: flex;
+  flex-direction: column;
+
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var( --rec);
+}
+
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
@@ -154,12 +178,11 @@ img {
 }
 
 footer {
-  padding: 384px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--accent-font);
-  height: 130px;
+  height: 768px;
   font-weight: 700;
   line-height: 82.5%;
   color: var(--ferst-title, #ffc2e6);
