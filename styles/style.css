@@ -77,6 +77,25 @@
   gap: 10px;
 }
 
+a {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 1px solid var(--accent-color);
+  padding: 0 13px;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+
 button {
   background-color: transparent;
   font-family: var(--accent-font);
