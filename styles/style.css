@@ -48,8 +48,9 @@
   border-bottom: 1px solid var( --dark-tl);
   border-left: 1px solid var( --dark-tl);
   position: absolute;
-  bottom: 20px;
+  bottom: 80px;
   left: 20px;
+
 }
 
 .rec-dot {
