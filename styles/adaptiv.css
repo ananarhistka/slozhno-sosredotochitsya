@@ -10,7 +10,7 @@
   .subtitle {
     display: grid;
     margin-block-start: 114px;
-    margin-block-end: 194px;
+    margin-block-end: 174px;
     justify-content: end;
     grid-template-columns: 50%;
   }
@@ -22,7 +22,6 @@
   }
   
   .bloc-what {
-
     display: grid;
     grid-template-columns: 32% 32% 32%;
     justify-content: space-between;
@@ -46,6 +45,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+
   .header-titel {
     text-shadow: 4px 4px 0 var(--accent-color, #ff8dcb);
     margin-top: 173px;
@@ -53,14 +53,26 @@
   }
 
   .header__theme-menu-list {
-    margin: 192px 20px 0;
+    margin: 172px 20px 0;
     display: flex;
     flex-direction: column;
     align-items: end;
   }
 
   .subtitle {
-    margin-inline-start: 364px;
+    margin-block-start: 162px;
+    margin-block-end: 223px;
+    grid-template-columns: 50%;
+  }
+
+  .bloc-what {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .header:after {
+    margin-block-end: 80px;
   }
 
 }
