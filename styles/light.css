@@ -3,7 +3,19 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root {
+:root.theme_light {
+  --ferst-title: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --main-color: #ffc2e6;
+  --bg-color: #fff1f7;
+  --main-text-color: #353430;
+  --title-color: #353430;
+  --title-color-dark: #353430;
+  --accent-font: "IBM Plex Mono";
+  --shadow-color-title: #ff0070;
+  --dark-tl: #353430;
+  --border-bt:#353430;
+  --rec: transparent;
 }
 
 .page.theme_light {
@@ -22,5 +34,22 @@
   --shadow-color-title: #ff0070;
   --dark-tl: #353430;
   --border-bt:#353430;
+  --rec: transparent;
   background-image: url(../images/cover-image-light.png);
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --ferst-title: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --main-color: #ffc2e6;
+    --bg-color: #fff1f7;
+    --main-text-color: #353430;
+    --title-color: #353430;
+    --title-color-dark: #353430;
+    --accent-font: "IBM Plex Mono";
+    --shadow-color-title: #ff0070;
+    --dark-tl: #353430;
+    --border-bt:#353430;
+    --rec: transparent;
+  }

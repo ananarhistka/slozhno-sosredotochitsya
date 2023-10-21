@@ -3,6 +3,35 @@
   и их переопределение под различные устройства
 */
 :root {
-  --accent-color: #ff0070;
+  --ferst-title: #DB00FF;
+  --bg-color: #000028;
+  --main-text-color: #F1B2CE;
+  --title-color-dark:#000028;
+  --accent-color: #FF0070;
+  --accent-font: 'IBM Plex Mono';
+  --dark-tl: #FF0070;
+  --border-bt: #FF0070;
+  --rec: #FF0070;
+}
+
+.header__theme-menu-button_active{
+  pointer-events: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  text-decoration: underline;
+}
+
+button:disabled {
+  pointer-events: none;
+}
+
+button:hover {
+  outline: 1px solid var(--dark-tl);
+  padding: 0 13px;
 }
 

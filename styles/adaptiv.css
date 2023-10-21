@@ -1,8 +1,5 @@
 @media only screen and (max-width: 2500px) {
 
-  .header__theme-menu-list {
-    margin: 20px 20px 0;
-  }
 
   .header-titel {
     text-shadow: 4px 4px 0 var(--shadow-color-title, #ff0070);
@@ -35,7 +32,7 @@
   .heading-what {
     display: grid;
     grid-template-columns: 32%;
-    margin-block-start: 147px;
+    margin-block-start: 80px;
     margin-block-end: 20px;
   }
 
