@@ -80,6 +80,7 @@
 a {
   text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
+  white-space: nowrap
 }
 
 a:focus {
@@ -164,6 +165,7 @@ button:hover {
 }
 
 .header-titel {
+  display: flex;
   font-family: var(--accent-font);
   height: 130px;
   font-weight: 700;
@@ -171,6 +173,7 @@ button:hover {
   text-align: left;
   color: var(--ferst-title, #ffc2e6);
   text-shadow: 4px 4px 0 var(--accent-color, #ff8dcb);
+  margin-left: -20px;
 }
 
 .title-decor {
@@ -178,7 +181,15 @@ button:hover {
 }
 
 .content-section .title-decor {
-  margin-block-end: 20px;
+  margin-block-end: 10px;
+}
+
+.content-paragraph {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+  font-family: var(--accent-font);
 }
 
 .content-text-block {
@@ -239,11 +250,35 @@ footer {
   align-items: center;
   justify-content: center;
   font-family: var(--accent-font);
+  position: relative;
   height: 768px;
   font-weight: 700;
   line-height: 82.5%;
   color: var(--ferst-title, #ffc2e6);
   text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: clamp(5.625rem, 5.0773rem + 2.3184vw, 6.5625rem);
 }
 
+.focus-footer:before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var( --dark-tl);
+  border-right: 1px solid var( --dark-tl);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+
+.focus-footer:after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var( --dark-tl);
+  border-left: 1px solid var( --dark-tl);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+}

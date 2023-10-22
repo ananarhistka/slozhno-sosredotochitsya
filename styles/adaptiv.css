@@ -1,10 +1,9 @@
 @media only screen and (max-width: 2500px) {
 
-
   .header-titel {
     text-shadow: 4px 4px 0 var(--shadow-color-title, #ff0070);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-start: 273px;
+    margin-block-start: 278px;
   }
 
   .subtitle {
@@ -42,6 +41,15 @@
     grid-template-columns: 31% 66%;
     justify-content: space-between;
   }
+
+  .bloc-how .title-decor:first-child {
+    margin-block-end: 20px;
+  }
+
+  .img-grid {
+    margin-block-start: 16px;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
