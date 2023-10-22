@@ -188,7 +188,7 @@ button:hover {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-
+  line-height: 130%;
   font-family: var(--accent-font);
 }
 

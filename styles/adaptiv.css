@@ -30,7 +30,7 @@
   .heading-what {
     display: grid;
     grid-template-columns: 32%;
-    margin-block-start: 80px;
+    margin-block-start: 82px;
     margin-block-end: 20px;
   }
 
