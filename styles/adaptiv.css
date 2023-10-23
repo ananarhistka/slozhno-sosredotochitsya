@@ -107,25 +107,121 @@
 @media only screen and (max-width: 375px) {
 
   .header__theme-menu-list {
-    margin: 0;
+    margin-block-start: 65px;
+    gap: 13px;
+  }
+
+  .header:before {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .header:after {
+    left: 10px;
+    bottom: 50px;
   }
 
   .header {
-    margin: 75px 10px 0 10px;
+    padding: 10px;
+    height: 668px;
   }
 
   .header-titel {
-    font-size: 116px;
+    text-align: left;
+    margin-block-start: 65px;
+    display: grid;
+    grid-template-columns: 100%;
+    padding-left: 20px;
   }
   
   .subtitle {
-    margin-block-start: 55px;
-    margin-inline-start: 0;
+    margin-block-start: 122px;
+    display: grid;
+    grid-template-columns: 100%;
   }
 
   .content-section {
-    margin: 0 10px;
+    margin: 10px;
+  }
+  
+  .bloc-why {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-block-start: 41px;
+    gap: 20px;
+  }
+  
+  .bloc-what {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+  .heading-what {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-block-start: 50px;
   }
 
+  .bloc-how {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 50px;
+    margin-block-end: 50px;
+    gap: 20px;
+  }
 
+  .img-grid {
+    object-fit: cover;
+    margin-block-start: 10px;
+    margin-block-end: 40px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "sunset"
+      "ice_cream"
+      "tape"
+      "books"
+      "street";
+  }
+  
+  .sunset {
+    grid-area: sunset;
+  }
+  
+  .ice_cream {
+    grid-area: ice_cream;
+  }
+  
+  .tape {
+    grid-area: tape;
+  }
+  
+  .street {
+    grid-area: street;
+  }
+  
+  .books {
+    grid-area: books;
+  }
+
+  footer {
+    height: 667px;
+    font-size: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .focus-footer:before {
+    right: 10px;
+    top: 10px;
+  }
+  
+  
+  .focus-footer:after {
+    bottom: 10px;
+    left: 10px;
+  
+  }
 }
