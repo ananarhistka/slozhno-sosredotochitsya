@@ -1,5 +1,4 @@
 @media only screen and (max-width: 2500px) {
-
   .header-titel {
     text-shadow: 4px 4px 0 var(--shadow-color-title, #ff0070);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -53,7 +52,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
   .header-titel {
     text-shadow: 4px 4px 0 var(--accent-color, #ff8dcb);
     margin-top: 180px;

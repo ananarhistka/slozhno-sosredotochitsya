@@ -242,7 +242,7 @@ footer {
   justify-content: center;
   font-family: var(--accent-font);
   position: relative;
-  height: 768px;
+  height: 100vh;
 }
 
 .focus-footer-text {
