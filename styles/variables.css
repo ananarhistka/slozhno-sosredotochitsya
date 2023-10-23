@@ -14,7 +14,7 @@
   --rec: #FF0070;
 }
 
-.header__theme-menu-button_active{
+.header__theme-menu-button_active {
   pointer-events: none;
 }
 
