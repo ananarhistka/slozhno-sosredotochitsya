@@ -14,7 +14,7 @@
   --accent-font: "IBM Plex Mono";
   --shadow-color-title: #ff0070;
   --dark-tl: #353430;
-  --border-bt:#353430;
+  --border-bt: #353430;
   --rec: transparent;
 }
 
@@ -33,7 +33,7 @@
   --accent-font: "IBM Plex Mono";
   --shadow-color-title: #ff0070;
   --dark-tl: #353430;
-  --border-bt:#353430;
+  --border-bt: #353430;
   --rec: transparent;
   background-image: url(../images/cover-image-light.png);
 }
@@ -50,8 +50,7 @@
     --accent-font: "IBM Plex Mono";
     --shadow-color-title: #ff0070;
     --dark-tl: #353430;
-    --border-bt:#353430;
+    --border-bt: #353430;
     --rec: transparent;
-  
-  } 
+  }
 }
