@@ -126,7 +126,7 @@ button:hover {
 header {
   position: relative;
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header__theme-menu-button_active {
@@ -242,7 +242,7 @@ footer {
   justify-content: center;
   font-family: var(--accent-font);
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .focus-footer-text {
