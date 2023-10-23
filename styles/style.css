@@ -46,7 +46,7 @@
   border-bottom: 1px solid var(--dark-tl);
   border-left: 1px solid var(--dark-tl);
   position: absolute;
-  bottom: 80px;
+  bottom: 20px;
   left: 20px;
 }
 
@@ -126,7 +126,6 @@ button:hover {
 header {
   position: relative;
   padding: 20px;
-  min-height: 100vh;
 }
 
 .header__theme-menu-button_active {
@@ -242,7 +241,7 @@ footer {
   justify-content: center;
   font-family: var(--accent-font);
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .focus-footer-text {

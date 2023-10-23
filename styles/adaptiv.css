@@ -5,16 +5,19 @@
     margin-block-start: 278px;
   }
 
+  header {
+    height: 100vh;
+  }
   .subtitle {
     display: grid;
-    margin-block-start: 114px;
-    margin-block-end: 174px;
+    margin-block-start: 110px;
     justify-content: end;
     grid-template-columns: 50%;
   }
 
   .bloc-why {
     display: grid;
+    margin-block-start: 57px;
     grid-template-columns: 29% 66%;
     justify-content: space-between;
   }
@@ -68,14 +71,18 @@
     top: 21px;
     right: 18px;
   }
+
+  header {
+    height: 1024px;
+  }
+  
   .subtitle {
     margin-block-start: 130px;
-    margin-block-end: 223px;
     grid-template-columns: 50%;
   }
 
-
   .bloc-why {
+    margin-block-start: 60px;
     display: grid;
     grid-template-columns: 29% 65%;
     justify-content: space-between;
