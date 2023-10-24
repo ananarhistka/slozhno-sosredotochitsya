@@ -52,6 +52,10 @@
     margin-block-start: 16px;
   }
 
+  footer {
+    height: 768px;
+    min-height: 667px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -138,14 +142,14 @@
     display: grid;
     grid-template-columns: 100%;
     margin-left: 0;
-    margin-top: 65px;
+    margin-top: 70px;
   }
   .rec {
     top: 12px;
     right: 8px;
   }
   .subtitle {
-    margin-block-start: 122px;
+    margin-block-start: 55px;
     display: grid;
     grid-template-columns: 100%;
   }
@@ -219,7 +223,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 667px;
   }
 
   .focus-footer:before {
@@ -231,8 +234,8 @@
     bottom: 10px;
     left: 10px;
   }
-  
+
   .focus-footer-text {
-    font-size: clamp(7.25rem, NaNrem + NaNvw, 7.25rem);
+    font-size: clamp(7.25rem, 5.7506rem + 6.3467vw, 9.8125rem);
   }
 }
