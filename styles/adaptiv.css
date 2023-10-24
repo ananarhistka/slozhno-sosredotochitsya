@@ -216,10 +216,10 @@
   }
 
   footer {
-    font-size: 82px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 667px;
   }
 
   .focus-footer:before {
@@ -227,10 +227,12 @@
     top: 10px;
   }
   
-  
   .focus-footer:after {
     bottom: 10px;
     left: 10px;
+  }
   
+  .focus-footer-text {
+    font-size: clamp(7.25rem, NaNrem + NaNvw, 7.25rem);
   }
 }
