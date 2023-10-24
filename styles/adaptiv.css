@@ -8,7 +8,9 @@
   header {
     height: 100vh;
   }
+
   .subtitle {
+    max-height: 71px;
     display: grid;
     margin-block-start: 110px;
     justify-content: end;
@@ -21,18 +23,20 @@
     grid-template-columns: 29% 66%;
     justify-content: space-between;
   }
-  
+
   .bloc-what {
+    margin-block-start: 80px;
+  }
+
+  .bloc-what__column {
     display: grid;
-    grid-template-columns: 32% 32% 32%;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
   .heading-what {
     display: grid;
     grid-template-columns: 32%;
-    margin-block-start: 82px;
     margin-block-end: 20px;
   }
 
@@ -56,7 +60,7 @@
     height: 768px;
     min-height: 667px;
   }
-  
+
   .focus-footer-text {
     text-shadow: 2px 2px 0 var(--shadow-color-title, #ff0070);
   }
@@ -83,19 +87,21 @@
   header {
     height: 1024px;
   }
-  
+
   .subtitle {
-    margin-block-start: 130px;
+    word-wrap: break-word;
+    margin-block-start: 162px;
     grid-template-columns: 50%;
   }
 
   .bloc-why {
+    word-wrap: break-word;
     margin-block-start: 60px;
     display: grid;
     grid-template-columns: 29% 65%;
     justify-content: space-between;
   }
-  
+
   .bloc-what {
     display: flex;
     flex-direction: column;
@@ -103,12 +109,15 @@
   }
 
   .bloc-how {
+    word-wrap: break-word;
     display: grid;
     grid-template-columns: 32% 65%;
     justify-content: space-between;
   }
-  
+
   footer {
+    height: 1024px;
+    min-height: 667px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,10 +127,8 @@
     font-size: clamp(7.5rem, 7.5rem + 0vw, 7.5rem);
     text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
   }
-
 }
 @media only screen and (max-width: 375px) {
-
   .header__theme-menu-list {
     margin-block-start: 65px;
     gap: 13px;
@@ -131,7 +138,7 @@
     top: 10px;
     right: 10px;
   }
-  
+
   .header:after {
     left: 10px;
     bottom: 10px;
@@ -162,14 +169,14 @@
   .content-section {
     margin: 10px;
   }
-  
+
   .bloc-why {
     display: grid;
     grid-template-columns: 100%;
     margin-block-start: 41px;
     gap: 20px;
   }
-  
+
   .bloc-what {
     display: grid;
     grid-template-columns: 100%;
@@ -203,28 +210,29 @@
       "books"
       "street";
   }
-  
+
   .sunset {
     grid-area: sunset;
   }
-  
+
   .ice_cream {
     grid-area: ice_cream;
   }
-  
+
   .tape {
     grid-area: tape;
   }
-  
+
   .street {
     grid-area: street;
   }
-  
+
   .books {
     grid-area: books;
   }
 
   footer {
+    height: 667px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,7 +242,7 @@
     right: 10px;
     top: 10px;
   }
-  
+
   .focus-footer:after {
     bottom: 10px;
     left: 10px;
