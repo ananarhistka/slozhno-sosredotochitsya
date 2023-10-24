@@ -124,6 +124,8 @@ button:hover {
 }
 
 header {
+  min-height: 668px;
+  height: 768px;
   position: relative;
   padding: 20px;
 }
@@ -242,6 +244,8 @@ footer {
   font-family: var(--accent-font);
   position: relative;
   height: 100vh;
+  min-height: 667px;
+  height: 768px;
 }
 
 .focus-footer-text {
