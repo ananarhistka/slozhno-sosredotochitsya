@@ -56,6 +56,10 @@
     height: 768px;
     min-height: 667px;
   }
+  
+  .focus-footer-text {
+    text-shadow: 2px 2px 0 var(--shadow-color-title, #ff0070);
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -112,6 +116,7 @@
 
   .focus-footer-text {
     font-size: clamp(7.5rem, 7.5rem + 0vw, 7.5rem);
+    text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
   }
 
 }
@@ -237,5 +242,6 @@
 
   .focus-footer-text {
     font-size: clamp(7.25rem, 5.7506rem + 6.3467vw, 9.8125rem);
+    text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
   }
 }
