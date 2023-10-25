@@ -122,6 +122,12 @@
     gap: 20px;
   }
 
+  .heading-what {
+    display: grid;
+    grid-template-columns: 32%;
+    margin-block-end: 0;
+  }
+
   .bloc-what__column {
     display: flex;
     flex-direction: column;
