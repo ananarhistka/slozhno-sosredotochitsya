@@ -10,11 +10,16 @@
   }
 
   .subtitle {
-    max-height: 71px;
     display: grid;
     margin-block-start: 110px;
     justify-content: end;
     grid-template-columns: 50%;
+  }
+  .subtitle p {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    width: 486px;
   }
 
   .bloc-why {
@@ -89,9 +94,17 @@
   }
 
   .subtitle {
+    display: grid;
     word-wrap: break-word;
     margin-block-start: 162px;
     grid-template-columns: 50%;
+  }
+
+  .subtitle p {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    width: 364px;
   }
 
   .bloc-why {
@@ -103,6 +116,12 @@
   }
 
   .bloc-what {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloc-what__column {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -166,6 +185,13 @@
     grid-template-columns: 100%;
   }
 
+  .subtitle p {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    width: 355px;
+  }
+
   .content-section {
     margin: 10px;
   }
@@ -181,11 +207,13 @@
     display: grid;
     grid-template-columns: 100%;
     gap: 20px;
+    margin-block-start: 50px;
   }
+  
   .heading-what {
     display: grid;
     grid-template-columns: 100%;
-    margin-block-start: 50px;
+    margin-block-end: 0;
   }
 
   .bloc-how {
