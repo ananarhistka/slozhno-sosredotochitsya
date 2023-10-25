@@ -51,6 +51,7 @@
 }
 
 .rec-dot {
+  font-family: var(--accent-font);
   padding: 0;
   display: flex;
   align-items: center;
@@ -71,27 +72,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1024px;
   gap: 10px;
 }
 
-a {
+.shadow-word {
   text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
   white-space: nowrap;
 }
 
-a:focus {
+.shadow-word:focus {
   outline: none;
 }
 
-a:focus-visible {
-  outline: 1px solid var(--accent-color);
-  padding: 0 13px;
+.shadow-word:focus-visible {
+  outline: 1px solid var(--main-text-color);
 }
 
-a:hover {
-  text-decoration: underline;
+.shadow-word:hover {
+ border-block-end: 1px solid var(--main-text-color);
 }
 
 button {
@@ -125,7 +124,7 @@ button:hover {
 
 header {
   min-height: 668px;
-  height: 768px;
+  height: 100vh;
   position: relative;
   padding: 20px;
 }
@@ -152,11 +151,6 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px;
-}
-
-.content-section {
-  max-width: 984px;
-  margin: 0 20px;
 }
 
 .header-titel {
