@@ -94,6 +94,7 @@
   }
 
   header {
+    word-wrap: break-word;
     min-height: 1024px;
   }
 
@@ -162,6 +163,13 @@
   }
 }
 
+@media only screen and (max-width: 390px) {
+  .subtitle {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .header {
     min-height: 668px;
@@ -197,12 +205,15 @@
   }
 
   .subtitle {
+
+    word-wrap: break-word;
     margin-block-start: 55px;
     display: grid;
     grid-template-columns: 100%;
   }
 
   .subtitle p {
+    word-wrap: break-word;
     display: flex;
     flex-direction: column;
     justify-self: end;

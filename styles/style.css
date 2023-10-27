@@ -25,7 +25,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  width: 66px;
+  width: 63px;
 }
 
 .header:before {
@@ -86,7 +86,8 @@
 }
 
 .shadow-word:focus-visible {
-  outline: 1px solid var(--main-text-color);
+  border: 1px solid var(--main-text-color);
+  outline: none;
 }
 
 .shadow-word:hover {
