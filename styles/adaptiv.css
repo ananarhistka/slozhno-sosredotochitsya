@@ -164,13 +164,6 @@
 }
 
 @media only screen and (max-width: 390px) {
-  .subtitle {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 375px) {
   .header {
     min-height: 668px;
     padding: 10px;
@@ -205,15 +198,14 @@
   }
 
   .subtitle {
-
-    word-wrap: break-word;
+    display: gid;
+    justify-content: center;
     margin-block-start: 55px;
     display: grid;
     grid-template-columns: 100%;
   }
 
   .subtitle p {
-    word-wrap: break-word;
     display: flex;
     flex-direction: column;
     justify-self: end;
