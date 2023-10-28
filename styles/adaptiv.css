@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 2500px) {
   .header-titel {
     text-shadow: 4px 4px 0 var(--shadow-color-title, #ff0070);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -95,7 +95,6 @@
 
   header {
     word-wrap: break-word;
-    min-height: 1024px;
   }
 
   .subtitle {
