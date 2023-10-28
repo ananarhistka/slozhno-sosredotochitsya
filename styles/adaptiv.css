@@ -1,4 +1,4 @@
-@media only screen and (max-width: 2500px) {
+@media (max-width: 1024px) {
   .header-titel {
     text-shadow: 4px 4px 0 var(--shadow-color-title, #ff0070);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -74,7 +74,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .header-titel {
     text-shadow: 4px 4px 0 var(--accent-color, #ff8dcb);
     margin-top: 180px;
@@ -143,6 +143,12 @@
     gap: 20px;
   }
 
+  .heading-what {
+    display: grid;
+    grid-template-columns: 30%;
+    margin-block-end: 0;
+  }
+
   .bloc-how {
     word-wrap: break-word;
     display: grid;
@@ -163,7 +169,65 @@
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media (max-width: 767px) {
+  .bloc-why {
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .heading-what {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-block-end: 0;
+  }
+
+  .bloc-how {
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .img-grid {
+    object-fit: cover;
+    margin-block-start: 10px;
+    margin-block-end: 40px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "sunset"
+      "ice_cream"
+      "tape"
+      "books"
+      "street";
+  }
+
+  .sunset {
+    grid-area: sunset;
+  }
+
+  .ice_cream {
+    grid-area: ice_cream;
+  }
+
+  .tape {
+    grid-area: tape;
+  }
+
+  .street {
+    grid-area: street;
+  }
+
+  .books {
+    grid-area: books;
+  }
+
+}
+
+@media (max-width: 668px) {
   .header {
     min-height: 668px;
     padding: 10px;
@@ -198,6 +262,7 @@
   }
 
   .subtitle {
+
     justify-content: center;
     margin-block-start: 55px;
     display: grid;
